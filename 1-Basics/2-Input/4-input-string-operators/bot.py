@@ -1,14 +1,23 @@
-print("Please enter the number of lives.")
- life=int(input())
- 
- print("Please enter the energy level.")
- energy=int(input())
- 
- print("Please enter the shield level.")
- shield=int(input())
- 
- print("Health has been set.")
- 
- print("Lives:  ♥♥♥")
- print("Energy: ♦♦♦♦♦♦♦♦♦♦")
- print("Shield: ♦♦♦♦♦♦♦")
+print("Please enter the number of lives.") 
+life=int(input())
+print("Please enter the energy level.")
+energy=int(input())
+print("Please enter the shield level.")
+shield=int(input())
+print("Health has been set.")
+
+print("Lives:  " + "♥" * life)
+print("Energy: " + "♦" * energy)
+print("Shield: " + "♦" * shield)
+
+print(" ###########")
+print(" #   Y  Y  #")
+print(" #         #")
+print(" ###########")
+print("################")
+print("#              #")
+print("#              ######")
+print("#              #")
+print("################")
+print("    ##      ##")
+print("    ##      ##")
