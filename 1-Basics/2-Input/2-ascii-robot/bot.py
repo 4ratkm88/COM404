@@ -4,7 +4,7 @@ eye = input()
 
 
 print(" ###########")
-print(" #   " + eye  eye + "  #")
+print(" #   " + eye +" "+  eye + "   #")
 print(" #         #")
 print(" ###########")
 print("################")
