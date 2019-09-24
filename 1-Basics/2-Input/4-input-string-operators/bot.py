@@ -1,11 +1,11 @@
 print("Please enter the number of lives.")
- 3
+ life=int(input())
  
  print("Please enter the energy level.")
- 10
+ energy=int(input())
  
  print("Please enter the shield level.")
- 7
+ shield=int(input())
  
  print("Health has been set.")
  
