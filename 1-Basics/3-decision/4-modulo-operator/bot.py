@@ -1,6 +1,6 @@
 print("Please enter a whole number.")
-num = input()
+num = int(input())
 if (num % 2) == 0:
-print( + str(num) + " is Even number")
+    print(str(num) + " is Even number")
 else:
-print(str(num)+ " is Odd number")
+    print(str(num)+ " is Odd number")
