@@ -5,14 +5,14 @@ bars = 1
 count = int(input(""))
 
 while bars < count:
-    print("Charging: "+"█"*bars)
-    time.sleep(1)
+    print("\033[0;32;40m Charging Up: "+"█"*bars+str(bars))
+    time.sleep(0.5)
     bars += 1
 if bars == count:
-    while bars != 0:
-        print("Discharging: "+"█"*bars)
-        time.sleep(1)
-        bars -=1
+    while bars > 0:
+        print("\033[0;31;40m Discharging: "+"█"*bars+str(bars))
+        time.sleep(0.1)
+        bars -=2
 else:
     print("The battery is fully charged.")
    
