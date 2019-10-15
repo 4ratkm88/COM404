@@ -1,10 +1,10 @@
 def sum_weights(wbeep, wbop):
     totalw = wbeep + wbop
-    print("The sum of Beep and Bop's weight is " + str(totalw))
+    return totalw
 
 def calc_avg_weight(wbeep, wbop):
     avgw = (wbeep+wbop)/2
-    print("The avg weight of the robots is " + str(avgw))
+    return avgw
 
 def run():
     print("What is the weight of Beep?")
@@ -13,10 +13,13 @@ def run():
     wbop=int(input())
     print("What would you like to calcluate (sum or average)?")
     calc=input()
+    totalw = sum_weights(wbeep, wbop)
+    avgw = calc_avg_weight(wbeep, wbop)
+
     if calc=="sum":
-        sum_weights(wbeep, wbop)
+       print("Total weight is: " + str(totalw)) 
     elif calc=="average": 
-        calc_avg_weight(wbeep, wbop)
+        print("Average weight is: " + str(avgw)) 
     else:
         print("Incorrect input")
 run()
