@@ -1,3 +1,3 @@
 def under(underword):
-    print(str(word()))
+    print(underword)
     print("*"*len(underword))
