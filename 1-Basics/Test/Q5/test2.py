@@ -4,7 +4,7 @@ for x in range(5,0,-1):
     print("...Oh dear, who is that?")
     name=str(input())
     if name=="smiler":
-        Health-=20
+        Health-=40
         print("Time to jam out of here.")
     elif name=="hacker":
         Health=Health+20
