@@ -14,7 +14,12 @@ class Bot:
         print("{} has {} shield".format(self.name, self.shield))
         print("{} has {} attributes".format(self.name, self.summary))
 
-    def age(self):
+    def display_name(self):
+        print("x"+len(self.name)*"x"+"x")
+        print("x{}x".format(self.name))
+        print("x"+len(self.name)*"x"+"x")
+
+    def display_age(self):
         print("{}  {} ".format(self.name, self.age))
        
 
@@ -22,8 +27,10 @@ class Bot:
 
 charlie = Bot("Charlie",4545, 5, 5, 5)
 
-
+charlie.display_name()
 charlie.display()
+
+charlie.display_age()
 
 
 
