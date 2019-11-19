@@ -26,18 +26,25 @@ class Gui(Tk):
     def add_heading_label(self):
     # create   
         self.heading_label = Label()
-        pass
+        self.heading_label.grid(row=1, column=3, columnspan=1)
+        self.heading_label.configure(font="Arial 24",text="Entrance ticket")
 
     
     # style
-    def instruction_label(self):
-        pass
+    def add_instruction_label(self):
+        self.add_instruction_label = Label()
+        self.add_instruction_label.grid(row= 2, column=3, columnspan=1)
+        self.add_instruction_label.configure(font="Arial 20", text="How many tickets to buy?")
 
     def add_tickets_entry(self):
+        self.add_tickets_entry_label = Entry()
+        self.add_tickets_entry.grid(row=3, column=1, columnspan=3)
         pass
 
     def add_buy_button(self):
-        pass
+        self.add_buy_button = Button()
+        self.add_buy_button.grid(row=4,column=4,columnspan=5)
+        self.add_buy_button.config(font="Arial 15", Text="buy")
 
     
 
