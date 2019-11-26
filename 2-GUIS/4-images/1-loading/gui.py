@@ -6,7 +6,9 @@ class Gui(Tk):
         super().__init__()
         
         # load resources
-        self.ambulance_image = PhotoImage(file="ambulance.gif")
+        self.ambulance_image = PhotoImage(file="U:/python/COM404/2-GUIS/4-images/1-loading/ambulance.gif")
+        self.bike_image = PhotoImage(file="U:/python/COM404/2-GUIS/4-images/1-loading/bike.gif")
+        self.plane_image = PhotoImage(file="U:/python/COM404/2-GUIS/4-images/1-loading/plane.gif")
         
         # set window attributes
         self.title("Gui")
