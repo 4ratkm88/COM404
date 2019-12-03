@@ -1,5 +1,5 @@
 from tkinter import *
-
+from tkinter import messagebox
 class Gui(Tk):
 
     def __init__(self):
@@ -19,16 +19,19 @@ class Gui(Tk):
         self.add_map_image_label()
         self.bus_move()
 
-    def add_heading_label(self):  
-        self.heading_label = Label()
-        self.heading_label.grid(row=0, column=0, columnspan=3, sticky=W+E+N+S)
-        self.heading_label.configure(font="Arial 19",text="Bus Journey") 
-    
-    def add_map_frame():
         self.map_frame = Frame()
         self.map_frame.configure(width=400, height=400)
-   
+
+        self.map_image_label = Label(self.map_frame)
+        self.map_image_label.place(x=0, y=0)
+        self.map_image_label.configure(image=self.map_image)
+
+        self.bus_image_label = Label(self.map_frame)
+        self.bus_image_label.place(x=10, y=10)
+        self.bus_image_label.configure(image=bus_image)
     
+   
+   
    
 
     def bus_move(self, event):

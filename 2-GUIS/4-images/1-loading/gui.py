@@ -21,29 +21,23 @@ class Gui(Tk):
 
     def add_heading_label(self):  
         self.heading_label = Label()
-        self.heading_label.grid(row=0, column=1, columnspan=3, sticky=W+E+N+S)
+        self.heading_label.grid(row=0, column=0, columnspan=3)
         self.heading_label.configure(font="Arial 19",text="Transport") 
 
     def add_ambulance_image_label(self):
         self.ambulance_image_label = Label()
-        self.ambulance_image_label.grid(row=1, column=1)
-        self.ambulance_image_label.configure(image=self.ambulance_image,
-                                             height=60,
-                                             width=60)
+        self.ambulance_image_label.grid(row=1, column=0)
+        self.ambulance_image_label.configure(image=self.ambulance_image)
 
     def add_bike_image_label(self):
         self.bike_image_label = Label()
-        self.bike_image_label.grid(row=1, column=2)
-        self.bike_image_label.configure(image=self.bike_image,
-                                             height=60,
-                                             width=60)
+        self.bike_image_label.grid(row=1, column=1)
+        self.bike_image_label.configure(image=self.bike_image)
  
     def add_plane_image_label(self):
         self.plane_image_label = Label()
-        self.plane_image_label.grid(row=1, column=3)
-        self.plane_image_label.configure(image=self.plane_image,
-                                             height=60,
-                                             width=60)
+        self.plane_image_label.grid(row=1, column=2)
+        self.plane_image_label.configure(image=self.plane_image)
  
 
 # Create an object of the Gui class when this module is executed

@@ -27,20 +27,21 @@ class AnimatedGui(Tk):
         
     # the timer tick function    
     def tick(self):
+        x=1
         if self.ball_x_pos > 450:
-            self.ball_x_change = -2
+            self.ball_x_change = x-10
         if self.ball_x_pos < 0:
-            self.ball_x_change = 2
+            self.ball_x_change = x
         if self.ball_y_pos < 0:
-            self.ball_y_change = 2
+            self.ball_y_change = x
         if self.ball_y_pos > 450:
-            self.ball_y_change = -2
+            self.ball_y_change = x-10
 
         self.ball_x_pos = self.ball_x_pos + self.ball_x_change
         self.ball_y_pos = self.ball_y_pos + self.ball_y_change
         self.ball_image_label.place(x=self.ball_x_pos, 
                                     y=self.ball_y_pos)
-        self.after(20, self.tick)
+        self.after(10, self.tick)
 
     # the ball image
     def add_ball_image_label(self):
